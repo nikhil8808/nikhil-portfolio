@@ -1,0 +1,14 @@
+.modal-header{
+    background-color: var( --modal-bg);
+
+}
+
+.modal-header h3{
+    color:var(--modal-header);
+
+}
+
+.modal-header button{
+
+
+}

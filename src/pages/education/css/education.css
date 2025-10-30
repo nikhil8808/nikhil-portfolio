@@ -1,0 +1,86 @@
+/* Education page styles - article-style cards */
+.edu-list{
+	display:flex;
+	flex-direction:column;
+	gap:1.5rem;
+}
+
+.edu-card{
+	background:transparent;
+	
+	border-radius:6px;
+}
+.edu-card:hover{
+	background:var(--card-bg-hover);
+}
+
+.edu-meta{
+	display:flex;
+	align-items:center;
+	gap:0.5rem;
+	margin-bottom:0.25rem;
+}
+
+.edu-date{
+	display:inline-block;
+	color:#9CA3AF; /* gray-400 */
+	font-size:0.875rem;
+}
+
+.edu-title{
+	margin:0.25rem 0;
+	font-size:1.125rem;
+	color:var(--card-header);
+	font-weight:600;
+}
+
+.edu-institution{
+	margin:0;
+	color:#6B7280; /* gray-500 */
+	margin-bottom:0.25rem;
+}
+
+.edu-desc{
+	margin:0 0 0.5rem 0;
+   color:var(--card-desc);
+	max-width:44rem;
+}
+
+.edu-link .read-link{
+	color:#06B6D4; /* teal-400 */
+	font-weight:600;
+	text-decoration:none;
+}
+
+.edu-link .read-link::after{
+	content:' ›';
+}
+
+@media (min-width:768px){
+	.edu-card{
+		padding:1rem 0.75rem;
+	}
+}
+
+/* Desktop layout */
+@media (min-width: 1024px) {
+  .edu-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem 2rem;
+  }
+
+  .edu-card {
+    padding: 1.25rem;
+   
+  }
+
+  .edu-title {
+    font-size: 1.25rem;
+  }
+
+  .edu-desc {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}

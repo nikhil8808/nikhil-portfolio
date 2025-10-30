@@ -1,0 +1,17 @@
+
+.mobile_menu{
+    background-color: var(--bg-menu);
+}
+.mobile_menu p{
+    color:var( --nav-header);
+}
+
+.nav-link{
+    color:var(--nav-link);
+}
+.nav{
+    background-color: var(--nav-bg);
+    color:var( --nav-text-color);
+    
+}
+

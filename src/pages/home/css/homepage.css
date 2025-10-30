@@ -1,0 +1,30 @@
+
+.description{
+    color:var(--color-zinc-600)
+
+}
+
+.container{
+    padding:var( --space-md) var( --space-sm);
+    font-family:var( --font-sans) ;
+    font-weight: 400;
+    font-size:var(--text-md) ;
+    line-height: 1.7rem;
+}
+.profile-img{
+    width:5.6rem;
+    height:5.6rem;
+    border-radius: 80%;
+    overflow: hidden;
+}
+.profile-img img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    
+}
+
+.download-cv{
+     background:var(--btn-bg-color);
+  color:var(--btn-text-color);
+}

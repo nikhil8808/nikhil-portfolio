@@ -1,0 +1,6 @@
+@import url('../assets/fonts/index.css');
+
+.text-bold{
+  font-family: Inter;
+  font-weight: 800;
+}

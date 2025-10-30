@@ -1,0 +1,77 @@
+@reference "tailwindcss";
+
+/* Article card styled with Tailwind utility groups via @apply */
+.article-card {
+	@apply  p-6   max-w-lg rounded-xl;
+
+}
+.article-card:hover{
+ 
+background:var( --card-bg-hover)
+}
+
+.meta {
+	@apply flex items-center gap-3 mb-3;
+}
+
+.date-bar {
+	@apply inline-block w-0.5 h-4 bg-gray-300 rounded;
+}
+
+.date {
+	@apply text-gray-500 text-sm;
+}
+
+.title {
+	@apply  text-sm font-semibold mb-2;
+	color:var(--card-header);
+}
+
+.description {
+	@apply  text-sm leading-relaxed mb-4;
+	color:var(--card-desc);
+}
+
+.link-container {
+	@apply mt-2;
+}
+
+.link {
+	@apply text-teal-500 font-medium inline-flex items-center gap-2;
+}
+
+.link::after {
+	content: '\203A'; /* single right-pointing angle quotation mark */
+	@apply text-teal-500 text-lg leading-none;
+	margin-left: 0.25rem;
+}
+
+/* Small responsive tweak */
+@media (min-width: 640px) {
+	.article-card {
+		@apply p-8;
+	}
+}
+
+/* Desktop responsive layout */
+@media (min-width: 1024px) {
+  .articles-grid {
+    @apply grid grid-cols-2 gap-6;
+  }
+
+  .article-card {
+    @apply transform transition-all duration-200 ease-in-out mb-0;
+  }
+
+  .article-card:hover {
+    @apply -translate-y-1 shadow-lg;
+  }
+
+  .title {
+    @apply text-lg;
+  }
+
+  .description {
+    @apply text-base leading-relaxed;
+  }
+}

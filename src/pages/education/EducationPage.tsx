@@ -1,4 +1,4 @@
-import React from 'react'
+
 import './css/education.css'
 import Header from '../../components/ui/header/Header'
 import Description from '../../components/ui/header/Description'

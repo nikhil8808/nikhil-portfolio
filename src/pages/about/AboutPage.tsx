@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { getAsset } from "../../utils/assets"
 import './css/about.css'
 import { Link } from 'react-router-dom'

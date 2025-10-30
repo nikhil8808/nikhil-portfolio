@@ -1,4 +1,4 @@
-import React,{useState,useContext} from 'react'
+import {useState} from 'react'
 import { Link ,useNavigate,useLocation} from 'react-router-dom'
 import ThemeButton from '../ui/button/ThemeButton'
 import Modal from '../ui/modal/Modal'
@@ -61,7 +61,7 @@ const Navbar = () => {
       {/* Middle Section (Nav Links) */}
       <div className='hidden md:flex items-center gap-[1.5rem] nav py-2 px-[2rem] shadow-md rounded-full'>
 
-        {links?.map((link:Link,index:number)=>{
+        {links?.map((link:Link)=>{
 
           return <Link key={link?.name} to={link?.path} className={`hover:text-teal-500 transition ${location?.pathname===link?.path?"text-teal-500":""} `}>{link?.name}</Link>
         })}
@@ -151,9 +151,9 @@ const Navbar = () => {
 
     body={<>
     <div className=''>
-      {links?.map((link:Link,index:number)=>{
+      {links?.map((link:Link, i:number)=>{
 
-        return   <div onClick={()=>handleNavigation(link?.path)} className={index<(links?.length-1)?`nav-link border-b py-3 cursor-pointer border-gray-300`:'nav-link py-3 cursor-pointer'}>
+        return   <div onClick={()=>handleNavigation(link?.path)} className={i<(links?.length-1)?`nav-link border-b py-3 cursor-pointer border-gray-300`:'nav-link py-3 cursor-pointer'}>
                     <span className='text-md'>{link?.name}</span>
                  </div>
              

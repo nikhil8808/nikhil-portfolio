@@ -1,4 +1,1 @@
-import * as React from "react";
-
-
-
+// This file can be removed if not used

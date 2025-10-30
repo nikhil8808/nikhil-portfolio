@@ -1,4 +1,3 @@
-import React from 'react'
 import './css/modal_header.css'
 
 interface ModalHeaderProps{

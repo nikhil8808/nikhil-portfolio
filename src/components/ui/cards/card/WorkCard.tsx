@@ -1,4 +1,4 @@
-import React from 'react'
+
 import './css/work_card.css'
 
 interface WorkCardProps{

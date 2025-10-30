@@ -1,5 +1,5 @@
-import React from 'react'
-import { getAsset, getSvg } from '../../utils/assets'
+
+import { getAsset } from '../../utils/assets'
 import './css/homepage.css'
 import { Link } from 'react-router-dom'
 import Carousel from '../../components/ui/carousel/Carousel'

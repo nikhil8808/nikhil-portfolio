@@ -1,5 +1,4 @@
-import React, { type ReactHTMLElement, type ReactNode } from 'react'
-import { useState } from 'react'
+import { type ReactNode } from 'react'
 
 
  interface ModalProps{
@@ -11,12 +10,7 @@ import { useState } from 'react'
     classes?:string;
 
  }
-const Modal = ({show,setShow,headerSection,body,footer,classes}:ModalProps) => {
-    
-    const toggalModal=()=>{
-        setShow((prev:boolean)=>!prev)
-
-    }
+const Modal = ({show,headerSection,body,footer,classes}:ModalProps) => {
 
 
   return (

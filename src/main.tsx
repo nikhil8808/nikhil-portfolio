@@ -8,8 +8,8 @@ import { ThemeProvider } from './context/ThemeContextProvider.tsx'
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <ThemeProvider>
-    <BrowserRouter>
-     <App />
+    <BrowserRouter basename="/nikhil-portfolio">
+      <App />
     </BrowserRouter>
     </ThemeProvider>
   

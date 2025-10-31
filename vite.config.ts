@@ -5,6 +5,6 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(),tailwindcss()],
-  base: '/nikhil-portfolio'  // Use relative paths for assets
+  base: '/nikhil-portfolio',  // Match the repository name exactly
 
 })

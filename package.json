@@ -5,10 +5,11 @@
   "type": "module",
   "homepage": "https://nikhil8808.github.io/nikhil-portfolio/",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.15",
